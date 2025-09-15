@@ -12,7 +12,8 @@ from peft import LoraConfig, get_peft_model
 from PIL import Image
 from torch.utils.data import DataLoader, Dataset
 from tqdm import tqdm
-from transformers import (AdamW, AutoModelForCausalLM, AutoProcessor,
+from torch.optim import AdamW
+from transformers import ( AutoModelForCausalLM, AutoProcessor,
                           get_scheduler)
 
 HOME = os.path.expanduser("~")
